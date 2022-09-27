@@ -1,6 +1,7 @@
 # Financebook
 
-Financebook is a personal finance organizer.
+### Financebook is a personal finance organizer.
+
 It's a currently ongoing project designed for frontend practice and studies.
 
 - Interface
