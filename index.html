@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financebook</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style/web.css">
+    <link rel="stylesheet" href="./style/mobile.css">
+    <link rel="stylesheet" href="./style/global.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-icons-wrapper">
+            <img class="icon_hamburguer" src="./assets/icon_hamburguer.svg" alt="">
+            <img class="logo" src="./assets/logo.png" alt="">
+        </div>
+        <div class="header-underline"></div>
+    </header>
+
+    <div id="buttons-manageTransactions" class="buttons-manageTransactions">
+        <button onclick="closeManageTransactions()" class="button-backToBalance">
+            <img class="icon-backToBalance" src="./assets/icon_arrow_previous.svg" alt="">
+            <p>Back</p>
+        </button>
+        <button class="button-new-mobile">New</button>
+    </div>
+
+    <section id="balance" class="balance">
+        <div class="first-column-wrapper">
+            <p class="p-balance">February Balance</p>
+            <p class="p-current-value">$ 00000</p>
+        </div>
+
+        <div class="second-column-wrapper">
+            <div class="incomes-expenses-wrapper">
+                <div>
+                    <p class="p-incomes">
+                        Incomes
+                        <img src="./assets/icon_incomes.svg" alt="">
+                    </p>
+                    <p class="p-incomes-value">$ 00000</p>
+                </div>
+                <div>
+                    <p class="p-expenses">
+                        Expenses
+                        <img src="./assets/icon_expenses.svg" alt="">
+                    </p>
+                    <p class="p-expenses-value">$ 00000</p>
+                </div>
+            </div>
+
+            <div class="button-new-web">
+                <button>New</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="table-functions" class="table-functions"></section>
+
+    <section id="table" class="table">
+        <table>
+            <thead class="thead-fixed">
+                <tr>
+                    <th>Name</th>
+                    <th>Value</th>
+                    <th>Date</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Expense</td>
+                    <td class="td-expense-value">$0000</td>
+                    <td>21/03/2022</td>
+                    <td>
+                        <img src="./assets/icon_edit.svg" alt="">
+                        <img src="./assets/icon_delete.svg" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Income</td>
+                    <td class="td-income-value">$0000</td>
+                    <td>21/03/2022</td>
+                    <td>
+                        <img src="./assets/icon_edit.svg" alt="">
+                        <img src="./assets/icon_delete.svg" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Expense</td>
+                    <td class="td-expense-value">$0000</td>
+                    <td>21/03/2022</td>
+                    <td>
+                        <img src="./assets/icon_edit.svg" alt="">
+                        <img src="./assets/icon_delete.svg" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Income</td>
+                    <td class="td-income-value">$0000</td>
+                    <td>21/03/2022</td>
+                    <td>
+                        <img src="./assets/icon_edit.svg" alt="">
+                        <img src="./assets/icon_delete.svg" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Expense</td>
+                    <td class="td-expense-value">$0000</td>
+                    <td>21/03/2022</td>
+                    <td>
+                        <img src="./assets/icon_edit.svg" alt="">
+                        <img src="./assets/icon_delete.svg" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Income</td>
+                    <td class="td-income-value">$0000</td>
+                    <td>21/03/2022</td>
+                    <td>
+                        <img src="./assets/icon_edit.svg" alt="">
+                        <img src="./assets/icon_delete.svg" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Expense</td>
+                    <td class="td-expense-value">$0000</td>
+                    <td>21/03/2022</td>
+                    <td>
+                        <img src="./assets/icon_edit.svg" alt="">
+                        <img src="./assets/icon_delete.svg" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Income</td>
+                    <td class="td-income-value">$0000</td>
+                    <td>21/03/2022</td>
+                    <td>
+                        <img src="./assets/icon_edit.svg" alt="">
+                        <img src="./assets/icon_delete.svg" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Expense</td>
+                    <td class="td-expense-value">$0000</td>
+                    <td>21/03/2022</td>
+                    <td>
+                        <img src="./assets/icon_edit.svg" alt="">
+                        <img src="./assets/icon_delete.svg" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Income</td>
+                    <td class="td-income-value">$0000</td>
+                    <td>21/03/2022</td>
+                    <td>
+                        <img src="./assets/icon_edit.svg" alt="">
+                        <img src="./assets/icon_delete.svg" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Expense</td>
+                    <td class="td-expense-value">$0000</td>
+                    <td>21/03/2022</td>
+                    <td>
+                        <img src="./assets/icon_edit.svg" alt="">
+                        <img src="./assets/icon_delete.svg" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Income</td>
+                    <td class="td-income-value">$0000</td>
+                    <td>21/03/2022</td>
+                    <td>
+                        <img src="./assets/icon_edit.svg" alt="">
+                        <img src="./assets/icon_delete.svg" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Expense</td>
+                    <td class="td-expense-value">$0000</td>
+                    <td>21/03/2022</td>
+                    <td>
+                        <img src="./assets/icon_edit.svg" alt="">
+                        <img src="./assets/icon_delete.svg" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Income</td>
+                    <td class="td-income-value">$0000</td>
+                    <td>21/03/2022</td>
+                    <td>
+                        <img src="./assets/icon_edit.svg" alt="">
+                        <img src="./assets/icon_delete.svg" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Expense</td>
+                    <td class="td-expense-value">$0000</td>
+                    <td>21/03/2022</td>
+                    <td>
+                        <img src="./assets/icon_edit.svg" alt="">
+                        <img src="./assets/icon_delete.svg" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Income</td>
+                    <td class="td-income-value">$0000</td>
+                    <td>21/03/2022</td>
+                    <td>
+                        <img src="./assets/icon_edit.svg" alt="">
+                        <img src="./assets/icon_delete.svg" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Expense</td>
+                    <td class="td-expense-value">$0000</td>
+                    <td>21/03/2022</td>
+                    <td>
+                        <img src="./assets/icon_edit.svg" alt="">
+                        <img src="./assets/icon_delete.svg" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Income</td>
+                    <td class="td-income-value">$0000</td>
+                    <td>21/03/2022</td>
+                    <td>
+                        <img src="./assets/icon_edit.svg" alt="">
+                        <img src="./assets/icon_delete.svg" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Expense</td>
+                    <td class="td-expense-value">$0000</td>
+                    <td>21/03/2022</td>
+                    <td>
+                        <img src="./assets/icon_edit.svg" alt="">
+                        <img src="./assets/icon_delete.svg" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Income</td>
+                    <td class="td-income-value">$0000</td>
+                    <td>21/03/2022</td>
+                    <td>
+                        <img src="./assets/icon_edit.svg" alt="">
+                        <img src="./assets/icon_delete.svg" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Expense</td>
+                    <td class="td-expense-value">$0000</td>
+                    <td>21/03/2022</td>
+                    <td>
+                        <img src="./assets/icon_edit.svg" alt="">
+                        <img src="./assets/icon_delete.svg" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Income</td>
+                    <td class="td-income-value">$0000</td>
+                    <td>21/03/2022</td>
+                    <td>
+                        <img src="./assets/icon_edit.svg" alt="">
+                        <img src="./assets/icon_delete.svg" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Expense</td>
+                    <td class="td-expense-value">$0000</td>
+                    <td>21/03/2022</td>
+                    <td>
+                        <img src="./assets/icon_edit.svg" alt="">
+                        <img src="./assets/icon_delete.svg" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Income</td>
+                    <td class="td-income-value">$0000</td>
+                    <td>21/03/2022</td>
+                    <td>
+                        <img src="./assets/icon_edit.svg" alt="">
+                        <img src="./assets/icon_delete.svg" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Expense</td>
+                    <td class="td-expense-value">$0000</td>
+                    <td>21/03/2022</td>
+                    <td>
+                        <img src="./assets/icon_edit.svg" alt="">
+                        <img src="./assets/icon_delete.svg" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Income</td>
+                    <td class="td-income-value">$0000</td>
+                    <td>21/03/2022</td>
+                    <td>
+                        <img src="./assets/icon_edit.svg" alt="">
+                        <img src="./assets/icon_delete.svg" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Expense</td>
+                    <td class="td-expense-value">$0000</td>
+                    <td>21/03/2022</td>
+                    <td>
+                        <img src="./assets/icon_edit.svg" alt="">
+                        <img src="./assets/icon_delete.svg" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Income</td>
+                    <td class="td-income-value">$0000</td>
+                    <td>21/03/2022</td>
+                    <td>
+                        <img src="./assets/icon_edit.svg" alt="">
+                        <img src="./assets/icon_delete.svg" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Expense</td>
+                    <td class="td-expense-value">$0000</td>
+                    <td>21/03/2022</td>
+                    <td>
+                        <img src="./assets/icon_edit.svg" alt="">
+                        <img src="./assets/icon_delete.svg" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Income</td>
+                    <td class="td-income-value">$0000</td>
+                    <td>21/03/2022</td>
+                    <td>
+                        <img src="./assets/icon_edit.svg" alt="">
+                        <img src="./assets/icon_delete.svg" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Expense</td>
+                    <td class="td-expense-value">$0000</td>
+                    <td>21/03/2022</td>
+                    <td>
+                        <img src="./assets/icon_edit.svg" alt="">
+                        <img src="./assets/icon_delete.svg" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Income</td>
+                    <td class="td-income-value">$0000</td>
+                    <td>21/03/2022</td>
+                    <td>
+                        <img src="./assets/icon_edit.svg" alt="">
+                        <img src="./assets/icon_delete.svg" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Expense</td>
+                    <td class="td-expense-value">$0000</td>
+                    <td>21/03/2022</td>
+                    <td>
+                        <img src="./assets/icon_edit.svg" alt="">
+                        <img src="./assets/icon_delete.svg" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Income</td>
+                    <td class="td-income-value">$0000</td>
+                    <td>21/03/2022</td>
+                    <td>
+                        <img src="./assets/icon_edit.svg" alt="">
+                        <img src="./assets/icon_delete.svg" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Expense</td>
+                    <td class="td-expense-value">$0000</td>
+                    <td>21/03/2022</td>
+                    <td>
+                        <img src="./assets/icon_edit.svg" alt="">
+                        <img src="./assets/icon_delete.svg" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Income</td>
+                    <td class="td-income-value">$0000</td>
+                    <td>21/03/2022</td>
+                    <td>
+                        <img src="./assets/icon_edit.svg" alt="">
+                        <img src="./assets/icon_delete.svg" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Expense</td>
+                    <td class="td-expense-value">$0000</td>
+                    <td>21/03/2022</td>
+                    <td>
+                        <img src="./assets/icon_edit.svg" alt="">
+                        <img src="./assets/icon_delete.svg" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Income</td>
+                    <td class="td-income-value">$0000</td>
+                    <td>21/03/2022</td>
+                    <td>
+                        <img src="./assets/icon_edit.svg" alt="">
+                        <img src="./assets/icon_delete.svg" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Expense</td>
+                    <td class="td-expense-value">$0000</td>
+                    <td>21/03/2022</td>
+                    <td>
+                        <img src="./assets/icon_edit.svg" alt="">
+                        <img src="./assets/icon_delete.svg" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Income</td>
+                    <td class="td-income-value">$0000</td>
+                    <td>21/03/2022</td>
+                    <td>
+                        <img src="./assets/icon_edit.svg" alt="">
+                        <img src="./assets/icon_delete.svg" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Expense</td>
+                    <td class="td-expense-value">$0000</td>
+                    <td>21/03/2022</td>
+                    <td>
+                        <img src="./assets/icon_edit.svg" alt="">
+                        <img src="./assets/icon_delete.svg" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Income</td>
+                    <td class="td-income-value">$0000</td>
+                    <td>21/03/2022</td>
+                    <td>
+                        <img src="./assets/icon_edit.svg" alt="">
+                        <img src="./assets/icon_delete.svg" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Expense</td>
+                    <td class="td-expense-value">$0000</td>
+                    <td>21/03/2022</td>
+                    <td>
+                        <img src="./assets/icon_edit.svg" alt="">
+                        <img src="./assets/icon_delete.svg" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Income</td>
+                    <td class="td-income-value">$0000</td>
+                    <td>21/03/2022</td>
+                    <td>
+                        <img src="./assets/icon_edit.svg" alt="">
+                        <img src="./assets/icon_delete.svg" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Expense</td>
+                    <td class="td-expense-value">$0000</td>
+                    <td>21/03/2022</td>
+                    <td>
+                        <img src="./assets/icon_edit.svg" alt="">
+                        <img src="./assets/icon_delete.svg" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Income</td>
+                    <td class="td-income-value">$0000</td>
+                    <td>21/03/2022</td>
+                    <td>
+                        <img src="./assets/icon_edit.svg" alt="">
+                        <img src="./assets/icon_delete.svg" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Expense</td>
+                    <td class="td-expense-value">$0000</td>
+                    <td>21/03/2022</td>
+                    <td>
+                        <img src="./assets/icon_edit.svg" alt="">
+                        <img src="./assets/icon_delete.svg" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Income</td>
+                    <td class="td-income-value">$0000</td>
+                    <td>21/03/2022</td>
+                    <td>
+                        <img src="./assets/icon_edit.svg" alt="">
+                        <img src="./assets/icon_delete.svg" alt="">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="pagination" class="pagination"></section>
+
+    <button id="button-open-manageTransactions" class="button-open-manageTransactions"
+        onclick="openManageTrasactions()">
+        <img src="./assets/icon_arrow_down.svg" alt="">
+    </button>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>

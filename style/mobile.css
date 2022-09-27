@@ -1,0 +1,109 @@
+@media screen and (max-width: 768px) {
+    .button-new-web,
+    .table,
+    .table-functions,
+    .pagination {
+        display: none;
+    }
+
+    .logo {
+        width: 120px;
+    }
+
+    .icon_hamburguer {
+        width: 30px;
+    }
+
+    .balance {
+        display: flex;
+        /*onclick change to none*/
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .p-balance {
+        font-size: 21px;
+    }
+
+    .p-current-value {
+        font-size: 50px;
+    }
+
+    .incomes-expenses-wrapper {
+        flex-direction: column;
+    }
+
+    .incomes-expenses-wrapper div {
+        align-items: center;
+        width: 200px;
+        height: 70px;
+    }
+
+    .button-open-manageTransactions {
+        display: flex;
+        /*onclick change to none*/
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        background: var(--color-bg-principal);
+        font-size: 18px;
+        border: none;
+        box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.8);
+        cursor: pointer;
+    }
+
+    .button-open-manageTransactions img {
+        width: 20px;
+    }
+
+    .buttons-manageTransactions {
+        width: 70%;
+        height: 30rem;
+        margin: auto;
+        display: none;
+        padding-top: 20px;
+        /*onclick change to flex*/
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .button-backToBalance {
+        margin-right: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: none;
+        color: var(--color-mediumgray);
+        border: 1px solid var(--color-mediumgray);
+        cursor: pointer;
+        border-radius: 8px;
+        width: 50%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left:20px ;
+        padding-right:20px;
+    }
+
+    .button-backToBalance:hover {
+        opacity: 80%;
+    }
+
+    .button-backToBalance img {
+        width: 10px;
+    }
+
+    .button-new-mobile {
+        background: var(--color-incomes);
+        color: var(--color-white);
+        border: solid 1px var(--color-incomes);
+        cursor: pointer;
+        padding: 10px;
+        border-radius: 8px;
+        width: 50%;
+    }
+    
+    .pagination {
+        height: 10rem;
+    }
+}

@@ -1,0 +1,14 @@
+:root {
+    --color-bg-principal: #0F0F0F;
+    --color-darkgray: #171717;
+    --color-mediumgray: #7A7979;
+    --color-expenses: #FF8F76;
+    --color-incomes: #738640;
+    --color-white: #ffff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
