@@ -63,7 +63,36 @@
         </div>
     </section>
 
-    <section id="table-functions" class="table-functions"></section>
+    <section id="table-functions" class="table-functions">
+
+        <div class="multiselect-wrapper" >
+            <button>Select</button>
+            <button>
+                <img src="./assets/icon_delete_multiselect.svg" alt="">Delete
+            </button>
+        </div>
+
+        <div class="search-wrapper" >
+            <label for="name"></label>
+            <input type="text" id="name" placeholder="Name">
+            
+            <label class="label-date" for="date-from">From:<input type="date" id="date-from"></label>
+
+            <label class="label-date" for="date-to">To: <input type="date" id="date-to"></label>
+
+            <label for="type"></label>
+            <select name="Type" id="type">
+                <option value="">Choose a Type</option>
+                <option value="Expenses">Expenses</option>
+                <option value="saab">Incomes</option>
+            </select>
+
+            <button class="button-search" >
+                <img src="./assets/icon_search.svg" alt="">
+            </button>
+        </div>
+
+    </section>
 
     <section id="table" class="table">
         <table>

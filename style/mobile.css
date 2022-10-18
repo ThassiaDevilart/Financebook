@@ -72,7 +72,7 @@
         margin-right: 10px;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-evenly;
         background: none;
         color: var(--color-mediumgray);
         border: 1px solid var(--color-mediumgray);
@@ -81,8 +81,8 @@
         width: 50%;
         padding-top: 10px;
         padding-bottom: 10px;
-        padding-left:20px ;
-        padding-right:20px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
 
     .button-backToBalance:hover {

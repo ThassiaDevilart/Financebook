@@ -131,9 +131,104 @@ header {
 }
 
 .table-functions {
-    margin-bottom: 1px;
-    height: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    height: 10rem;
+    margin: auto;
+}
+
+.multiselect-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.multiselect-wrapper > button {
+    width: 120px;
+    height: 35px;
+    letter-spacing: 2px;
+    padding: 10px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.multiselect-wrapper :last-child {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: var(--color-status-red);
+}
+
+.search-wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.search-wrapper > input, button, select {
     background: var(--color-darkgray);
+    border: none;
+    color: white;
+    padding: 10px;
+    font-size: 12px;
+    border-radius: 5px;
+    margin: 2px;
+    height: 35px;
+}
+
+.search-wrapper > input[type=text]::placeholder {
+    color:white;
+    font-size: 12px;
+} 
+
+.search-wrapper > select {
+    width: 150px;
+}
+
+.search-wrapper > input, select:focus {
+    outline: none;
+}
+
+.label-date {
+    display: flex;
+    align-items: center;
+    color: white;
+    background: var(--color-darkgray);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 2px;
+    height: 35px;
+    font-size: 12px;
+}
+
+.label-date > input {
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.535);
+    font-size: 12px;
+    cursor: pointer;
+    width: 80px;
+}
+
+.label-date > input:focus {
+    outline: none;
+}
+
+.button-search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 80px;
+}
+
+.button-search img {
+    width: 15px;
 }
 
 table {
