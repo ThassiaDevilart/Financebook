@@ -106,4 +106,22 @@
     .pagination {
         height: 10rem;
     }
+
+    .search-wrapper {
+        margin-top: 5px;
+    }
+
+    .search-input-date {
+      width: 100%;  
+    }
+
+    .search-dropdown-buttons {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .search-button-cancel, .search-button-apply {
+        width: 100%;
+    }
 }

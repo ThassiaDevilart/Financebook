@@ -64,34 +64,68 @@
     </section>
 
     <section id="table-functions" class="table-functions">
+        <div class="multiselect-wrapper">
+            <button class="multiselect-first-button" >
+                <p>Select</p>
+            </button>
 
-        <div class="multiselect-wrapper" >
-            <button>Select</button>
-            <button>
-                <img src="./assets/icon_delete_multiselect.svg" alt="">Delete
+            <button class="multiselect-second-button" >
+                <img src="./assets/icon_delete_multiselect.svg" alt="">
+                <p>Delete</p>
             </button>
         </div>
 
         <div class="search-wrapper" >
-            <label for="name"></label>
-            <input type="text" id="name" placeholder="Name">
-            
-            <label class="label-date" for="date-from">From:<input type="date" id="date-from"></label>
+            <div class="search-main">
+                <label class="search-input-text" for="">
+                    Search:
+                    <input type="text">
+                </label>
+                
+                <button class="search-button-icon" >
+                    <img src="./assets/icon_search.svg" alt="">
+                </button>
 
-            <label class="label-date" for="date-to">To: <input type="date" id="date-to"></label>
+                <button class="search-button-dropdown" >
+                    <p>Filters</p>
+                    <img src="./assets/icon_arrow_down.svg" alt="">
+                </button>
+            </div>
 
-            <label for="type"></label>
-            <select name="Type" id="type">
-                <option value="">Choose a Type</option>
-                <option value="Expenses">Expenses</option>
-                <option value="saab">Incomes</option>
-            </select>
+            <div class="search-dropdown"> 
+                <div class="search-input-date-wrapper">
 
-            <button class="button-search" >
-                <img src="./assets/icon_search.svg" alt="">
-            </button>
+                    <label class="search-input-date" for="">
+                        From:
+                        <input type="date">
+                    </label>
+                    
+                    <label class="search-input-date" for=""> 
+                        To:
+                        <input type="date">
+                    </label>
+                </div>
+
+                <div class="radios-wrapper">
+                    <p>Category:</p>
+                    <div>
+                        <input type="radio" name="category" id="incomes">
+                        <label for="incomes">Incomes</label>
+    
+                        <input type="radio" name="category" id="expenses">
+                        <label for="expenses">Expenses</label>
+    
+                        <input type="radio" name="category" id="all">
+                        <label for="all">All</label>
+                    </div>
+                </div>
+
+                <div class="search-dropdown-buttons">
+                    <button class="search-button-cancel" >Cancel</button>
+                    <button class="search-button-apply" >Apply</button>
+                </div>
+            </div>
         </div>
-
     </section>
 
     <section id="table" class="table">
